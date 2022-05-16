@@ -5,52 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./JS/index.js"></script>
-
-    <style>
-        button {
-            width: 200px;
-            height: 50px;
-            border-color: black;
-            background-color: rosybrown;
-        }
-    </style>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Calculator</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="inner-container">
+            <p>КАЛЬКУЛЯТОР</p>
+            <input type="text" id="firstNumber" placeholder="Введите первое число"> <br>
+            <input type="text" id="secondNumber" placeholder="Введите второе число">
 
+            <div class="button-container">
+                <button onclick="summ()">+</button>
+                <button onclick="subt()">-</button>
+                <button onclick="multip()">x</button>
+                <button onclick="divis()">:</button>
+            </div>
 
-    <button onclick="func1()">+</button>
-    <button onclick="func2()">-</button>
-    <button onclick="func3()">*</button>
-    <button onclick="func4()">/</button>
+            <div>
+                <div class="result-container">
+                    <p>РЕЗУЛЬТАТ:</p>
+                    <input type="text" id="result"> <br>
+                    <button onclick="getReset()" class="nan">Сбросить</button>
+                </div>
+            </div>
+        </div>
 
-    <script>
-        function func1() {
-            let a = prompt('Введите первое число');
-            let b = prompt('Введите второе число');
-            alert(+a + +b);
-        }
-
-        function func2() {
-            let a = prompt('Введите первое число');
-            let b = prompt('Введите второе число');
-            alert(+a - +b);
-        }
-
-        function func3() {
-            let a = prompt('Введите первое число');
-            let b = prompt('Введите второе число');
-            alert(+a * +b);
-        }
-
-        function func4() {
-            let a = prompt('Введите первое число');
-            let b = prompt('Введите второе число');
-            alert(+a / +b);
-        }
-    </script>
+        <script src="./JS/index.js"></script>
+    </div>
 </body>
 
 </html>

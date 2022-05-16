@@ -1,0 +1,16 @@
+input {
+    margin-bottom: 10px;
+    border-color: whitesmoke;
+    padding: 15px;
+}
+
+button {
+    border-color: whitesmoke;
+    height: 50px;
+    width: 50px;
+    font-size: large;
+}
+
+.nan {
+    width: 150px;
+}
